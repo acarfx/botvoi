@@ -1,4 +1,4 @@
-# botvoi
+# BotVoi
 
 Minimal and easy-to-use Node.js client for the BotVoi API.
 
@@ -174,3 +174,4 @@ class User
 
 ## Lisans
 MIT
+
