@@ -1,0 +1,57 @@
+{
+  "name": "botvoi",
+  "version": "1.0.0",
+  "description": "BotVoi API için basit Node.js istemci kütüphanesi.",
+  "keywords": [
+    "botvoi",
+    "api",
+    "client",
+    "moderation",
+    "discord",
+    "node"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "ACAR"
+  },
+  "main": "src/index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./src/index.js",
+      "import": "./src/index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acarfx/botvoi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acarfx/botvoi/issues"
+  },
+  "homepage": "https://github.com/acarfx/botvoi#readme",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run test",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.3"
+  }
+}
